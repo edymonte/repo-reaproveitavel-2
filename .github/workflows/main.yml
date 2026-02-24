@@ -13,7 +13,7 @@ jobs:
           run: echo "Publicação da Relase final"
     CD:
       needs: [CI]
-      uses: edymonte/repo-reaproveitavel-2/.github/workflows/cd.yml@mail
+      uses: edymonte/repo-reaproveitavel-2/.github/workflows/cd.yml@main
       
     
    
