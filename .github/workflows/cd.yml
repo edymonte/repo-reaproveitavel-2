@@ -1,9 +1,10 @@
 name: Deploy Fake
 on:
-  wrorkflow_call:
+  workflow_call:
 jobs:
       deploy-kubernetes:
         runs-on: ubuntu-latest
         steps:
             - name: Deploy no ambiente
+
               run: echo "Executando o deploy no ambiente de desenvolvimento"
