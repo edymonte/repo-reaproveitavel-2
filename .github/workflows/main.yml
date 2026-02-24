@@ -16,7 +16,3 @@ jobs:
       uses: edymonte/repo-reaproveitavel-2/.github/workflows/cd.yml@main
       secrets: 
         ambiente: ${{secrets.AMBIENTE_ENTREGA}}
-      
-    
-   
-
