@@ -24,8 +24,6 @@ jobs:
     CD:
       needs: [CI]
       uses: edymonte/repo-reaproveitavel-2/.github/workflows/cd.yml@main
-      with:
-        ambiente: ${{inputs.ambiente}}
       secrets: 
         ambiente: ${{secrets.AMBIENTE_ENTREGA}}
       
