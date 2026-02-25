@@ -1,6 +1,7 @@
 name: CI/CD Fake
-on: 
-  workflow_dispatch:
+on:
+ push: 
+ workflow_dispatch:
 jobs:
     CI:
       runs-on: ubuntu-latest
