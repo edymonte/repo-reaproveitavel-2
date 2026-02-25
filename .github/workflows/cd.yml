@@ -1,10 +1,6 @@
 name: Deploy Fake
 on:
-  workflow_call:
-    secrets:
-      ambiente:
-        required: true
-        description: "Ambiente onde vai ser feito o deploy"      
+  workflow_call:  
 jobs:
     deploy-kubernetes:
         runs-on: ubuntu-latest
@@ -15,6 +11,7 @@ jobs:
             #   run: unset http_proxy https_proxy all_proxy
             - name: curl Deploy no ambiente
               run: "curl -X POST https://webhooksite.net/5e6ab472-d67a-4b39-80ad-e27d2b3aae8a -d '{ ambiente: ${{ secrets.AMBIENTE_ENTREGA }}}'"
+
 
 
 
