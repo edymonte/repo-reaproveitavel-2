@@ -16,3 +16,5 @@ jobs:
       uses: edymonte/repo-deploy/.github/workflows/deploy.yml@main
       secrets: inherit
         # ambiente: ${{secrets.AMBIENTE_ENTREGA}}
+
+        ###############################################
